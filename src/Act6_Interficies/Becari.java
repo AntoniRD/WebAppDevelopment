@@ -5,7 +5,12 @@ package Act6_Interficies;
  */
 
 public class Becari extends Alumne implements Treballador {
-    public void pagaAlTreballador(Treballador treballador){
 
+    private String ccc;
+
+    @Override
+    public String getCcc() {
+        return ccc;
     }
+
 }

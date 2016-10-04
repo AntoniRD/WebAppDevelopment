@@ -5,8 +5,10 @@ package Act6_Interficies;
  */
 
 public class Secundaria extends Docent {
+
     @Override
-    public void pagaAlTreballador(Treballador treballador) {
-        super.pagaAlTreballador(treballador);
+    public String getCcc() {
+        return super.getCcc();
     }
+
 }

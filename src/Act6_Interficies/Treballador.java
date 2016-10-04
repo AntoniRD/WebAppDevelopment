@@ -6,6 +6,6 @@ package Act6_Interficies;
 
 public interface Treballador {
 
-    void pagaAlTreballador(Treballador treballador);
+    String getCcc();
 
 }

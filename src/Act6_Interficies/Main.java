@@ -7,7 +7,15 @@ package Act6_Interficies;
 public class Main {
 
     public static void main(String[] args) {
-        Persona P = new Persona();
+        Persona p = new Persona();
+    }
+
+    public void pagaAlTreballador(Treballador treballador) {
+
+        String ccc = treballador.getCcc();
+
+      ///.....
+
     }
 
 }

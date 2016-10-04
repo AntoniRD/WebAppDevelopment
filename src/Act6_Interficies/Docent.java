@@ -5,7 +5,10 @@ package Act6_Interficies;
  */
 
 public class Docent extends Persona implements Treballador {
-        public void pagaAlTreballador(Treballador treballador){
 
-        }
+    private String ccc;
+
+    public String getCcc() {
+        return ccc;
+    }
 }
