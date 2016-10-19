@@ -9,7 +9,7 @@ import java.util.List;
  * Created by Budha on 14/10/16.
  */
 
-public class TraditionalLog {
+public class MainTraditionalLog {
     public static void main(String[] args) {
 
         //Delegam les responsabilitats del log

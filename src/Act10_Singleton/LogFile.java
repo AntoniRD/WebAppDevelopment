@@ -44,4 +44,24 @@ public class LogFile extends LogAbstract {
             e.printStackTrace();
         }
     }
+
+
+
+    //variable global
+    private static Log logSingleton = null;
+
+    private LogFile(){}
+
+    private synchronized static void createInstance(){
+        if (logSingleton == null){
+            //logSingleton = new LogFile();
+            //logSingleton = (Log) new LogFile();
+        }
+    }
+
+    public static Log getInstance(){
+        if (logSingleton == null) createInstance();
+        return logSingleton;
+    }
+
 }
