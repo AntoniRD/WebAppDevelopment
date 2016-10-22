@@ -1,7 +1,6 @@
-package Prac_FiguresGeometriques;
+package Act11_Prototype;
 
 import javax.swing.*;
-import java.awt.*;
 import java.util.Scanner;
 
 /**
@@ -11,14 +10,12 @@ import java.util.Scanner;
 public class Menu {
 
     Figura figura;
-
-
-    Scanner sc = new Scanner(System.in);
     //boolean fill;
     //Color color;
 
-    public Menu(){
 
+    public Menu(){
+        seeMenu();
     }
 
     /**
@@ -47,7 +44,7 @@ public class Menu {
         optionFigure = readString();
         switch (optionFigure){
             case "A": //Cadena de tect
-                String chain = JOptionPane.showInputDialog("Quin escrit vols que dibuixi? ");
+                String chain = JOptionPane.showInputDialog("Dels colors mostrats per consola, quin vols? ");
                 return new Cadena (chain);
             case "B": //Punt
                 int xp1 = Integer.parseInt(JOptionPane.showInputDialog("Coordenada x1: "));
@@ -73,9 +70,9 @@ public class Menu {
                 int width = Integer.parseInt(JOptionPane.showInputDialog("Amplari: "));
                 return new Rectangle(hight,width);
             case "G": //Poligon
-                printMissage("Actualment fora de servei");
+                printMissage("Fora de servei");
             case "H": //Historial de figures
-                printMissage("Actualment fora de servei");
+                printMissage("Fora de servei");
             case "I": System.exit(0);
                 default: printMissage("Cap de les opcions es correcte, tria una de les existents");
         }
@@ -116,9 +113,11 @@ public class Menu {
      * @return
      */
     public String readString(){
-
+        Scanner sc = new Scanner(System.in);
         return sc.next();
     }
 
+
+    //Mapa
 
 }

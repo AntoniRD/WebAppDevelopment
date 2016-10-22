@@ -1,26 +1,29 @@
-package Prac_FiguresGeometriques;
 
-import java.util.ArrayList;
+package Act11_Prototype;
+
 import javax.swing.*;
 import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
 
 /**
  * Created by Budha on 08/10/16.
  */
+/*
+public class Main {
+    static ArrayList<Figura> listFigure;
 
-public class Main{
-    static ArrayList <Figura> listFigure;
     public static void main(String[] args) {
         final Lienzo lienzo = new Lienzo();
 
         //Elección de figura.
-        //String nombreFigura;
+        String nombreFigura;
 
         //Arranque de Frame en un hilo nuevo.
         Runnable guiThread = (new Runnable() {
             @Override
             public void run() {
-                JFrame frame = new JFrame("Lienzo");
+                JFrame frame;
+                frame = new JFrame("Lienzo");
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
                 frame.setBounds(100, 100, 800, 600);
@@ -30,7 +33,6 @@ public class Main{
             }
         });
 
-
         try {
             SwingUtilities.invokeAndWait(guiThread);
         } catch (InterruptedException e) {
@@ -39,27 +41,19 @@ public class Main{
             e.printStackTrace();
         }
 
-
-        Menu menu = new Menu();
-
-
-        if (listFigure != null) {
-            listFigure = new ArrayList<>();
-        }
-
-
-        Figura figura = menu.seeMenu();
-
-
-        /*
-        listFigure.add(figura);
-        listFigure.set(figura);
-        */
-        lienzo.setFigura(figura);
-        lienzo.repaint();
-
-
-
     }
 
+
+    //Menu menu = new Menu();
+    if (listFigure != null){
+        listFigure = new ArrayList<>();
+    }
+
+
+    Figura figura = menu.seeMenu();
+    listFigure.add(figura);
+    Lienzo.setFigura(figura);
+    Lienzo.repaint();
+
 }
+*/

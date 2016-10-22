@@ -1,4 +1,4 @@
-package Prac_FiguresGeometriques;
+package Act11_Prototype;
 
 import java.awt.*;
 
@@ -6,7 +6,7 @@ import java.awt.*;
  * Created by Budha on 10/10/16.
  */
 
-public class Quadrat extends Figura{
+public class Quadrat extends Figura {
 
     private int side;
 
@@ -16,6 +16,6 @@ public class Quadrat extends Figura{
 
     public void draw(Graphics g) {
         super.draw(g);
-        g.drawRect(10,10,side,side);
+        g.drawLine(10,10,side,side);
     }
 }

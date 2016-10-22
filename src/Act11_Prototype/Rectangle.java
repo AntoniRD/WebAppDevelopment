@@ -1,4 +1,4 @@
-package Prac_FiguresGeometriques;
+package Act11_Prototype;
 
 import java.awt.*;
 
@@ -6,7 +6,7 @@ import java.awt.*;
  * Created by Budha on 10/10/16.
  */
 
-public class Rectangle extends Figura{
+public class Rectangle extends Figura {
 
     private int height, wifth;
 
@@ -17,6 +17,6 @@ public class Rectangle extends Figura{
 
     public void draw(Graphics g) {
         super.draw(g);
-        g.drawRect(10,10,height,wifth);
+        g.drawLine(10,10,height,wifth);
     }
 }
